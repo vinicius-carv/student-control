@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Espaco Academico</title>
+    <link rel="stylesheet" href="/css/edit.css" />
+</head>
+<body>
+    <div class="dataContainer">
+        <p>Nome: </p><span th:text="${student.firstName}"></span>
+        <p>Sobrenome: </p><span th:text="${student.lastName}"></span>
+        <p>Email: </p><span th:text="${student.email}"></span>
+    </div>
+    <form th:action="@{/edit}" th:object="${student}" method="post">
+        <input type="hidden" th:field="*{id}" />
+        <input type="hidden" th:field="*{firstName}" />
+        <input type="hidden" th:field="*{lastName}" />
+        <input type="hidden" th:field="*{email}" />
+        <button type="submit">Edit your profile</button>
+    </form>
+</body>
+</body>
+</html>

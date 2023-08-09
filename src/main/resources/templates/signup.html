@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <head>
+        <title>Espaco Academico</title>
+        <link rel="stylesheet" href="/css/edit.css" />
+    </head>
+<body>
+    <h1>Crie sua conta</h1>
+    <a href="/"><button>< Home</button></a>
+    <form action="#" th:action="@{/signUpSuccess}" th:object="${student}" method="POST">
+        <label for="fname">Nome: </label>
+        <input type="text" placeholder="Nome" id="fname" th:field="*{firstName}"/>
+        <label for="lname">Sobrenome: </label>
+        <input type="text" placeholder="Sobrenome" id="lname" th:field="*{lastName}"/>
+        <label for="email">Email: </label>
+        <input type="text" placeholder="example@email.com" id="email" th:field="*{email}"/>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
