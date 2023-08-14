@@ -12,10 +12,8 @@ import javax.lang.model.type.ErrorType;
 
 @Controller
 public class HtmlController {
-    Student student1 = new Student("Vinicius","Carvalho","valves8956@gmail.com");
     @GetMapping("/")
     public String getIndex(Model model){
-        model.addAttribute("studentToString",student1.toString());
         return "index";
     }
     @GetMapping("/signup")
@@ -23,6 +21,10 @@ public class HtmlController {
         Student student = new Student();
         model.addAttribute("student",student);
         return "signup";
+    }
+    @GetMapping("/login-student")
+    public String getHtmlLoginStudent(Model model){
+        return "login-student";
     }
     @PostMapping(path="/signUpSuccess")
     // no post student
@@ -33,7 +35,6 @@ public class HtmlController {
     @PostMapping(path = "/edit")
     public String editProfile(@ModelAttribute("student") Student student) {
         System.out.println("Editing profile for student id: " + student.getId());
-        // Perform necessary logic for editing the profile
-        return "edit"; // Return the edit page
+        return "edit";
     }
 }
