@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.vinidev</groupId>
-	<artifactId>portfolio</artifactId>
+	<artifactId>StudentControl</artifactId>
 	<version>0.5.-SNAPSHOT</version>
 	<name>portfolio</name>
 	<description>Demo project for Spring Boot</description>
