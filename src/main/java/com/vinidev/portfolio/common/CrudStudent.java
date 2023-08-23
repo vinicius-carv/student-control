@@ -19,7 +19,7 @@ public class CrudStudent {
             super(message);
         }
     }
-    // Validador de email
+    // Validador de email com regex
     public static boolean isValidEmail(String email) {
         String emailRegex = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
 
