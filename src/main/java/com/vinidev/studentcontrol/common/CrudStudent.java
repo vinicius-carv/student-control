@@ -1,6 +1,6 @@
-package com.vinidev.portfolio.common;
+package com.vinidev.studentcontrol.common;
 
-import com.vinidev.portfolio.entity.Student;
+import com.vinidev.studentcontrol.entity.Student;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.ArrayList;

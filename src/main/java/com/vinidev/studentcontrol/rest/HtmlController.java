@@ -1,14 +1,11 @@
-package com.vinidev.portfolio.rest;
+package com.vinidev.studentcontrol.rest;
 
-import com.vinidev.portfolio.entity.Student;
+import com.vinidev.studentcontrol.entity.Student;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-
-import javax.lang.model.type.ErrorType;
 
 @Controller
 public class HtmlController {

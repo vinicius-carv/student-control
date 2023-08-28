@@ -1,4 +1,4 @@
-package com.vinidev.portfolio;
+package com.vinidev.studentcontrol;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

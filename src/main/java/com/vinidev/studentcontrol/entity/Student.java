@@ -1,4 +1,4 @@
-package com.vinidev.portfolio.entity;
+package com.vinidev.studentcontrol.entity;
 import jakarta.persistence.*;
 
 @Entity(name="student")
